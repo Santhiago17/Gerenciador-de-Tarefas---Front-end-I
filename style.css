@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: azure;
+}
+
+#container {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#tabela {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+tr {
+  width: 100%;
+}
+
+#campoDescricao {
+  border: 15px;
+}
+
+#colunas td {
+  font-weight: bold;
+  background-color: beige;
+}
+
+#colunas td,
+#tabela tbody td {
+  padding: 8px;
+}
+
+.btnExcluir {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btnExcluir:hover {
+  background-color: #c82333;
+}
+
+#btnAddAcao{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    font-size: medium;
+    cursor: pointer;
+    color: white;
+}
+
+#inputTituloTarefa{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    
+}
