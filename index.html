@@ -3,60 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Gerenciador de Tarefas</title>
   </head>
   <body>
     <h2>Gerenciador de Tarefas</h2>
 
     <label for="input">Título</label>
-    <input type="text" id="txtTitulo" />
+    <input type="text" placeholder="Digite o título da sua tarefa" id="txtTitulo"/>
     <br />
     <br />
-    <label for="txtDescricao">Descrição</label>
+    <label for="input">Descrição</label>
     <br />
     <br />
-    <textarea id="txtDescricao" rows="4" cols="50"> </textarea>
+    <textarea id="txtTarefa" rows="10" cols="50"> </textarea>
     <br />
     <br />
-    <button type="button">Adicionar</button>
+    <button type="button"id="btnAddAcao" onclick="addTarefa()">Adicionar</button>
     <br />
     <br />
-    <table border="lorem10">
+    <table id="tabela" border="2">
       <thead>
         <tr>
-          <td>Título</td>
-          <td>Descrição</td>
-          <td>Ação</td>
-        </tr>
-        <tr>
-          <td>lorem10</td>
-          <td>lorem10</td>
-          <td>lorem10</td>
-          <button type="button" id="btnExcluiAcao">Excluir</button>
-        </tr>
-        <tr>
-          <td>lorem10</td>
-          <td>lorem10</td>
-          <td>lorem10</td>
-        </tr>
-        <tr>
-          <td>lorem10</td>
-          <td>lorem10</td>
-          <td>lorem10</td>
-        </tr>
-        <tr>
-          <td>lorem10</td>
-          <td>lorem10</td>
-          <td>lorem10</td>
-        </tr>
-        <tr>
-          <td>lorem10</td>
-          <td>lorem10</td>
-          <td>lorem10</td>
+          <td id="tituloTarefa">Título</td>
+          <td id="descricaoTarefa">Descrição</td>
+          <td id="botaoExcluir">Ação</td>
         </tr>
       </thead>
+      <tbody>
+        <tr>
+          
+        </tr>
+      </tbody>
     </table>
+
     <script src="./script.js"></script>
   </body>
 </html>
